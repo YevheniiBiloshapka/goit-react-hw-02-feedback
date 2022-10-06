@@ -10,15 +10,13 @@ export const Box = styled.div`
 export const Section = styled.section`
   display: flex;
   flex-direction: column;
-  gap: 24px;
-
-  width: 260px;
-  padding: 23px;
+  width: 306px;
 
   background: #ffffff;
   box-shadow: 0px 1px 4px rgba(126, 147, 255, 0.2);
   border-radius: 6px;
   & h2 {
+    padding: 23px;
     font-weight: 600;
     font-size: 18px;
     line-height: 21px;
@@ -35,6 +33,7 @@ export const Message = styled.p`
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
+  margin-bottom: 23px;
 
   color: #7f8e9d;
 `;

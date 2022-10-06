@@ -37,6 +37,7 @@ export const Item = styled.button`
   padding: 6px 8px;
   gap: 4px;
   border: none;
+  background: none;
   &:hover {
     background: #d1f8fd;
     box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);

@@ -1,36 +1,30 @@
-import { List } from './statistics.styled';
+import { List, StatistickItem, SumItem } from './statistics.styled';
 import PropTypes from 'prop-types';
 
 export const Statistics = state => {
   const { good, neutral, bad } = state.value;
   return (
     <List>
-      <li>
-        <p>
-          Good: <b>{good}</b>
-        </p>
-      </li>
-      <li>
-        <p>
-          Neutral: <b>{neutral}</b>
-        </p>
-      </li>
-      <li>
-        <p>
-          Bad: <b>{bad}</b>
-        </p>
-      </li>
-      <li>
-        <p>
-          Total:<b>{good + neutral + bad}</b>
-        </p>
-      </li>
-      <li>
-        <p>
-          Positive feedback:{' '}
-          <b>{Math.round((good / (good + neutral + bad)) * 100)} %</b>
-        </p>{' '}
-      </li>
+      <StatistickItem>
+        <p>Good:</p>
+        <span>{good}</span>
+      </StatistickItem>
+      <StatistickItem>
+        <p>Neutral:</p>
+        <span>{neutral}</span>
+      </StatistickItem>
+      <StatistickItem>
+        <p>Bad:</p>
+        <span>{bad}</span>
+      </StatistickItem>
+      <SumItem>
+        <p>Total</p>
+        <span>{good + neutral + bad}</span>
+      </SumItem>
+      <SumItem>
+        <p>Positive feedback</p>
+        <span>{Math.round((good / (good + neutral + bad)) * 100)} %</span>
+      </SumItem>
     </List>
   );
 };
