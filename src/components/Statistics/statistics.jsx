@@ -1,4 +1,4 @@
-import { List, StatistickItem, SumItem } from './statistics.styled';
+import { List, StatistickItem } from './statistics.styled';
 import PropTypes from 'prop-types';
 
 export const Statistics = state => {
@@ -18,14 +18,14 @@ export const Statistics = state => {
         <span>{bad}</span>
       </StatistickItem>
 
-      <SumItem>
+      <StatistickItem>
         <p>Total</p>
         <span>{good + neutral + bad}</span>
-      </SumItem>
-      <SumItem>
+      </StatistickItem>
+      <StatistickItem>
         <p>Positive feedback</p>
         <span>{Math.round((good / (good + neutral + bad)) * 100)} %</span>
-      </SumItem>
+      </StatistickItem>
     </List>
   );
 };
