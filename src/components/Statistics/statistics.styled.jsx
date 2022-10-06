@@ -4,7 +4,7 @@ export const List = styled.ul`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 306;
+  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
