@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const List = styled.ul`
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -49,7 +48,7 @@ export const StatistickItem = styled.li`
     flex: 0 1 33%;
   }
   &:nth-child(3) {
-    flex: 0 1 33.34%;
+    flex: 0 1 33%;
     border-right: none;
   }
   &:nth-child(4) {
