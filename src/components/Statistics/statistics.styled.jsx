@@ -55,30 +55,12 @@ export const StatistickItem = styled.li`
   &:nth-child(4) {
     border-top: 1px solid #7f8e9d;
     flex: 0 1 49.6%;
+    background: #dfffda;
   }
   &:nth-child(5) {
     border-top: 1px solid #7f8e9d;
     border-right: none;
-    flex: 0 1 50%;
+    flex: 0 1 49.6%;
+    border-right: 1px solid #dfffda;
   }
 `;
-
-// export const SumItem = styled.li`
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   flex: 0 1 33.33%;
-//   gap: 6px;
-
-//   height: 74px;
-//   border-top: 1px solid #7f8e9d;
-//   background: #daf5ff;
-//   border-right: 1px solid #7f8e9d;
-//   &:nth-child(2n) {
-//     background: #dfffda;
-//   }
-//   &:last-child {
-//     border-right: 1px solid #dfffda;
-//   }
-// `;
