@@ -2,9 +2,8 @@ import styled from 'styled-components';
 
 export const List = styled.ul`
   display: flex;
-  flex-direction: row;
+
   flex-wrap: wrap;
-  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -35,10 +34,10 @@ export const StatistickItem = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 0 1 33.3333%;
   align-items: center;
   gap: 6px;
 
-  width: 100px;
   height: 74px;
 
   background: #ecf1f3;
@@ -47,7 +46,8 @@ export const StatistickItem = styled.li`
   }
 
   &:nth-child(3n) {
-    border-right: 1px solid #ecf1f3;
+    /* border-right: 1px solid #ecf1f3; */
+    border-right: none;
   }
 `;
 
@@ -56,9 +56,9 @@ export const SumItem = styled.li`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 0 1 33.33%;
   gap: 6px;
 
-  width: 152px;
   height: 74px;
   border-top: 1px solid #7f8e9d;
   background: #daf5ff;
