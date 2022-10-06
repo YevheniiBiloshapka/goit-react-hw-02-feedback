@@ -11,6 +11,7 @@ export const Section = styled.section`
   display: flex;
   flex-direction: column;
   width: 306px;
+  overflow: hidden;
 
   background: #ffffff;
   box-shadow: 0px 1px 4px rgba(126, 147, 255, 0.2);
