@@ -17,6 +17,7 @@ export const Statistics = state => {
         <p>Bad:</p>
         <span>{bad}</span>
       </StatistickItem>
+
       <SumItem>
         <p>Total</p>
         <span>{good + neutral + bad}</span>
