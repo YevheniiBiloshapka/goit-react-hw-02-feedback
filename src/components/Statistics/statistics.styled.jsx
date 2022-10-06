@@ -38,7 +38,7 @@ export const StatistickItem = styled.li`
   align-items: center;
   gap: 6px;
 
-  width: 101px;
+  width: 100px;
   height: 74px;
 
   background: #ecf1f3;
