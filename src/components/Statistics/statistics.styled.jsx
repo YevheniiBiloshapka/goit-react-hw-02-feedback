@@ -54,12 +54,12 @@ export const StatistickItem = styled.li`
   &:nth-child(4) {
     border-top: 1px solid #7f8e9d;
     flex: 0 1 49.6%;
-    background: #dfffda;
+    background: #daf5ff;
   }
   &:nth-child(5) {
     border-top: 1px solid #7f8e9d;
     border-right: none;
     flex: 0 1 49.6%;
-    border-right: 1px solid #dfffda;
+    background: #dfffda;
   }
 `;
