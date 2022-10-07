@@ -10,14 +10,8 @@ export class App extends Component {
     bad: 0,
   };
 
-  incrementGood = () => {
-    this.setState(prevState => ({ good: prevState.good + 1 }));
-  };
-  incrementNeutral = () => {
-    this.setState(prevState => ({ neutral: prevState.neutral + 1 }));
-  };
-  incrementBad = () => {
-    this.setState(prevState => ({ bad: prevState.bad + 1 }));
+  incrementState = e => {
+    this.setState(prevState => ({ [e]: prevState[e] + 1 }));
   };
 
   render() {
@@ -26,9 +20,7 @@ export class App extends Component {
       <Box>
         <FeedbackOptions
           value={this.state}
-          incrementGood={this.incrementGood}
-          incrementNeutral={this.incrementNeutral}
-          incrementBad={this.incrementBad}
+          incrementState={this.incrementState}
         />
         <Section>
           <h2>Statistics</h2>
